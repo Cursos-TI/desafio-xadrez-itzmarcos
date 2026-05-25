@@ -78,6 +78,43 @@ int main() {
         contadorRainha++;
     } while(contadorRainha <= 8);
 
+// Linha em branco para separar os movimentos
+    printf("\n");
+
+
+    // =========================
+    // Movimento do Cavalo
+    // Utilizando LOOPS ANINHADOS
+    //
+    // Movimento em "L":
+    // 2 casas para baixo
+    // 1 casa para a esquerda
+    //
+    // Estruturas utilizadas:
+    // FOR + WHILE
+    // =========================
+
+    int movimentoCavalo;
+    int contadorHorizontal;
+
+    printf("Movimento do Cavalo:\n");
+
+    // Loop FOR controla o movimento vertical
+    for(movimentoCavalo = 1; movimentoCavalo <= 2; movimentoCavalo++) {
+        printf("Baixo\n");
+
+        // Loop WHILE aninhado
+        // Executa apenas após o segundo movimento para baixo
+        if(movimentoCavalo == 2) {
+
+            contadorHorizontal = 1;
+
+            while(contadorHorizontal <= 1) {
+                printf("Esquerda\n");
+                contadorHorizontal++;
+            }
+        }
+    }
 
     return 0;
 }
